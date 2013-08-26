@@ -25,15 +25,25 @@ You can use on command line
 
     $ biyo
 
-    $ How many field in your bio? 2
-    $ 1. field key: name
-    $ 1. field value: halit
-    $ 2. field key: surname
-    $ 2. field value: alptekin
+    $ How many fields in your bio? 3
+    $ 1. field key: Name
+    $ 1. field value: Halit
+    $ 2. field key: Surname
+    $ 2. field value: Alptekin
+    $ 3. field key: Programming Skills
+    $ 3. field value: python,ruby,php,perl,c,c++
 
-    {
-      "name": "halit",
-      "surname": "alptekin"
+    $ {
+      "Name": "Halit",
+      "Surname": "Alptekin",
+      "Programming Skills": [
+        "python",
+        "ruby",
+        "php",
+        "perl",
+        "c",
+        "c++"
+      ]
     }
 
 ## Contributing
