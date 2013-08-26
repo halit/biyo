@@ -31,7 +31,10 @@ You can use on command line
     $ 2. field key: surname
     $ 2. field value: alptekin
 
-    $ {"name":"halit","surname":"alptekin"}
+    {
+      "name": "halit",
+      "surname": "alptekin"
+    }
 
 ## Contributing
 
