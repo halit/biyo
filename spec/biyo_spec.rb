@@ -13,6 +13,6 @@ describe 'Biyo' do
     test_result[:name] = :halit
     test_result[:surname] = :alptekin
 
-    test_bio.output.should be_a(test_result.to_json.class)
+    test_bio.output_json.should be_a(test_result.to_json.class)
   }
 end
