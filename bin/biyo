@@ -1,0 +1,32 @@
+#!/usr/bin/env ruby
+# encoding: UTF-8
+
+require 'biyo'
+
+print 'How many field in your bio? '
+field_count = gets.to_i
+
+counter = 0
+new_bio = Biyo::Bio.new
+
+def clear parameter
+    parameter.tr("\n", "")
+end
+
+while counter < field_count
+
+    print (counter + 1).to_s + '. field name: '
+    field_key = gets
+
+    print  (counter + 1).to_s + '. field value: '
+    field_value = gets
+
+    field_key = clear(field_key)
+    field_value = clear(field_value)
+
+    new_bio.new_field(field_key => field_value)
+
+    counter += 1
+end
+
+puts new_bio.output
