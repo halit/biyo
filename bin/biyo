@@ -15,7 +15,7 @@ end
 
 while counter < field_count
 
-    print (counter + 1).to_s + '. field name: '
+    print (counter + 1).to_s + '. field key: '
     field_key = gets
 
     print  (counter + 1).to_s + '. field value: '
