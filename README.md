@@ -22,6 +22,14 @@ You can use on command line
 
     $ biyo
 
+    $ How many field in your bio? 2
+    $ 1. field key: name
+    $ 1. field value: halit
+    $ 2. field key: surname
+    $ 2. field value: alptekin
+
+    $ {"name":"halit","surname":"alptekin"}
+
 ## Contributing
 
 1. Fork it
