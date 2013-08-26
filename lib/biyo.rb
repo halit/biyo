@@ -10,7 +10,7 @@ module Biyo
 
     def new_field field_parameter
       field_parameter.each do |key, value|
-        @collector[key] = value
+        @collector[key.to_s.tr("\n", "")] = value.to_s.tr("\n", "")
       end
 
     end
