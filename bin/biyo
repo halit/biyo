@@ -13,13 +13,10 @@ bio = Biyo::Bio.new
 while counter < field_count
 
     print (counter + 1).to_s + '. field key: '
-    field_key = gets
+    field_key = gets.chomp
 
     print  (counter + 1).to_s + '. field value: '
-    field_value = gets
-
-    field_key = clear(field_key)
-    field_value = clear(field_value)
+    field_value = gets.chomp
 
     bio.new_field(field_key => field_value)
 
