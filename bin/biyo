@@ -2,12 +2,13 @@
 # encoding: UTF-8
 
 require 'biyo'
+require 'json'
 
 print 'How many field in your bio? '
 field_count = gets.to_i
 
 counter = 0
-new_bio = Biyo::Bio.new
+bio = Biyo::Bio.new
 
 def clear parameter
     parameter.tr("\n", "")
@@ -24,9 +25,9 @@ while counter < field_count
     field_key = clear(field_key)
     field_value = clear(field_value)
 
-    new_bio.new_field(field_key => field_value)
+    bio.new_field(field_key => field_value)
 
     counter += 1
 end
 
-puts new_bio.output
+puts JSON.pretty_generate(bio.output_hash)

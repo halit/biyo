@@ -15,8 +15,12 @@ module Biyo
 
     end
 
-    def output
+    def output_json
       @collector.to_json
+    end
+
+    def output_hash
+      @collector
     end
   end
 end
