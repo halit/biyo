@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/halitalptekin/biyo.png?branch=develop)](https://travis-ci.org/halitalptekin/biyo)
+[![Code Climate](https://codeclimate.com/github/halitalptekin/biyo.png)](https://codeclimate.com/github/halitalptekin/biyo)
+
 # Biyo
 
 Bio creator for hackers.
