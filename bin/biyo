@@ -4,7 +4,7 @@
 require 'biyo'
 require 'json'
 
-print 'How many field in your bio? '
+print 'How many fields in your bio? '
 field_count = gets.to_i
 
 counter = 0
@@ -23,4 +23,8 @@ while counter < field_count
     counter += 1
 end
 
-puts JSON.pretty_generate(bio.output_hash)
+if bio.output_hash.length < 1
+    abort('Please enter the greater then 0 or correct value!')
+else
+    puts JSON.pretty_generate(bio.output_hash)
+end
