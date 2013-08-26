@@ -1,6 +1,6 @@
 # Biyo
 
-Bio creator for hackers
+Bio creator for hackers.
 
 ## Installation
 
