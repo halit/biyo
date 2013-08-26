@@ -1,0 +1,29 @@
+#!/usr/bin/env ruby
+# encoding: UTF-8
+
+require 'biyo'
+require 'json'
+
+print 'How many field in your bio? '
+field_count = gets.to_i
+
+counter = 0
+bio = Biyo::Bio.new
+
+while counter < field_count
+
+    print (counter + 1).to_s + '. field key: '
+    field_key = gets
+
+    print  (counter + 1).to_s + '. field value: '
+    field_value = gets
+
+    field_key = clear(field_key)
+    field_value = clear(field_value)
+
+    bio.new_field(field_key => field_value)
+
+    counter += 1
+end
+
+puts JSON.pretty_generate(bio.output_hash)
