@@ -1,6 +1,7 @@
 [![Build Status](https://travis-ci.org/halitalptekin/biyo.png?branch=develop)](https://travis-ci.org/halitalptekin/biyo)
 [![Code Climate](https://codeclimate.com/github/halitalptekin/biyo.png)](https://codeclimate.com/github/halitalptekin/biyo)
 [![Gem Version](https://badge.fury.io/rb/biyo.png)](http://badge.fury.io/rb/biyo)
+[![Dependency Status](https://gemnasium.com/halitalptekin/biyo.png)](https://gemnasium.com/halitalptekin/biyo)
 # Biyo
 
 Bio creator for hackers.
